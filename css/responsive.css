@@ -1,0 +1,242 @@
+@media (max-width: 1050px) {
+    .hero-container {
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 62px;
+    }
+
+    .feature-cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .scanner-grid,
+    .dia-grid,
+    .more-grid {
+        gap: 55px;
+    }
+}
+
+@media (max-width: 850px) {
+    .hero {
+        padding-top: 130px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-lead {
+        max-width: 620px;
+    }
+
+    .hero-stage {
+        min-height: 610px;
+    }
+
+    .showcase,
+    .showcase.reverse,
+    .scanner-grid,
+    .dia-grid,
+    .more-grid,
+    .progress-card {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase.reverse .showcase-copy,
+    .showcase.reverse .showcase-visual {
+        order: initial;
+    }
+
+    .showcase-copy {
+        padding-left: 0;
+    }
+
+    .showcase-visual {
+        min-height: 540px;
+    }
+
+    .scanner-visual,
+    .dia-visual,
+    .more-visual {
+        min-height: 600px;
+    }
+
+    .progress-card {
+        padding: 55px 40px;
+    }
+
+    .plant-scene {
+        min-height: 330px;
+    }
+
+    .feature-cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .section {
+        padding: 85px 0;
+    }
+
+    .brand-copy small {
+        display: none;
+    }
+
+    .brand-logo {
+        width: 43px;
+        height: 43px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-bottom: 100px;
+    }
+
+    .hero h1 {
+        font-size: 47px;
+        letter-spacing: -3px;
+    }
+
+    .hero-lead {
+        font-size: 17px;
+    }
+
+    .hero-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .hero-stage {
+        min-height: 525px;
+        margin-top: 20px;
+    }
+
+    .section-intro h2,
+    .scanner-copy h2,
+    .more-copy h2,
+    .progress-content h2,
+    .cta-content h2 {
+        font-size: 39px;
+        letter-spacing: -2px;
+    }
+
+    .showcase {
+        min-height: auto;
+        margin-bottom: 65px;
+    }
+
+    .showcase-visual {
+        min-height: 520px;
+    }
+
+    .app-phone.large {
+        width: 230px;
+        height: 465px;
+    }
+
+    .scanner-visual {
+        min-height: 560px;
+    }
+
+    .scanner-frame {
+        height: 530px;
+    }
+
+    .scanner-phone {
+        width: 220px;
+        height: 450px;
+    }
+
+    .scanner-corner.tl {
+        left: 25px;
+        top: 50px;
+    }
+
+    .scanner-corner.tr {
+        right: 25px;
+        top: 50px;
+    }
+
+    .scanner-corner.bl {
+        left: 25px;
+        bottom: 50px;
+    }
+
+    .scanner-corner.br {
+        right: 25px;
+        bottom: 50px;
+    }
+
+    .scan-line {
+        left: 52px;
+        right: 52px;
+    }
+
+    .scan-pill {
+        bottom: 35px;
+    }
+
+    .feature-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        min-height: 210px;
+    }
+
+    .dia-visual,
+    .more-visual {
+        min-height: 535px;
+    }
+
+    .dia-phone,
+    .more-phone {
+        width: 235px;
+        height: 480px;
+    }
+
+    .dia-halo {
+        width: 340px;
+        height: 340px;
+    }
+
+    .ai-status {
+        right: 0;
+        bottom: 40px;
+    }
+
+    .progress-card {
+        padding: 45px 25px;
+    }
+
+    .progress-steps {
+        gap: 22px;
+    }
+
+    .plant-scene {
+        min-height: 290px;
+    }
+
+    .plant-emoji {
+        font-size: 120px;
+    }
+
+    .cta-content {
+        padding: 70px 20px;
+        border-radius: 30px;
+    }
+}

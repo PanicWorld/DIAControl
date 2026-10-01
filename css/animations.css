@@ -1,0 +1,91 @@
+.reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity .85s ease, transform .85s cubic-bezier(.2,.8,.2,1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-delay {
+    transition-delay: .14s;
+}
+
+.hero-phone {
+    animation: phoneFloat 5s ease-in-out infinite;
+}
+
+@keyframes phoneFloat {
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(1deg);
+    }
+}
+
+.scan-line {
+    animation: scanMove 2.8s ease-in-out infinite;
+}
+
+@keyframes scanMove {
+    0%,
+    100% {
+        top: 145px;
+        opacity: .45;
+    }
+
+    50% {
+        top: 455px;
+        opacity: 1;
+    }
+}
+
+.ai-status {
+    animation: statusFloat 4s ease-in-out infinite;
+}
+
+@keyframes statusFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.plant-emoji {
+    animation: plantFloat 4s ease-in-out infinite;
+}
+
+@keyframes plantFloat {
+    0%,
+    100% {
+        transform: translateY(0) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateY(-9px) rotate(2deg);
+    }
+}
+
+.more-phone {
+    animation: phoneFloat 5.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+}
